@@ -1,0 +1,3 @@
+### Message publish
+GET localhost:8080/publish
+Content-Type: application/json

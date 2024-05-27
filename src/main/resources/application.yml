@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+spring:
+  application.name: spring-cloud-stream-binder-kafka-sample
+  cloud:
+    function:
+      definition: sampleConsumer;sampleFunction;
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:29092
+        bindings:
+          sample-producer:
+            producer:
+              configuration:
+                key.serializer: org.apache.kafka.common.serialization.StringSerializer
+          sampleConsumer-in-0:
+            consumer:
+              configuration:
+                key.deserializer: org.apache.kafka.common.serialization.StringDeserializer
+                value.deserializer: org.apache.kafka.common.serialization.StringDeserializer
+          sampleFunction-in-0:
+            consumer:
+              configuration:
+                key.deserializer: org.apache.kafka.common.serialization.StringDeserializer
+                value.deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      bindings:
+        sample-producer:
+          destination: sample-topic
+        sampleConsumer-in-0:
+          destination: sample-topic
+          group: sample-consumer
+        sampleFunction-in-0:
+          destination: sample-topic
+          group: sample-function
