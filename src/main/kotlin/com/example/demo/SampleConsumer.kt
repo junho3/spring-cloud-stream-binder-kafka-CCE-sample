@@ -7,6 +7,7 @@ import java.util.function.Consumer
 @Component
 class SampleConsumer : Consumer<String> {
     override fun accept(t: String) {
+        // Consumer throw ClassCastException.
         logger.info { "Consumer: $t" }
     }
 }
