@@ -1,12 +1,12 @@
 # spring-cloud-stream-binder-kafka-sample
 
-This is a sample project to verify a ClassCastException when using Consumer and @Component combination in spring-cloud-stream.  
+This is a sample project for https://github.com/spring-cloud/spring-cloud-stream/issues/2704.  
 
-It worked correctly before in 2021.0.3.  
-It seems like starting with spring cloud stream 2021.0.4.  
+Using Consumer and @Component worked correctly before in 2021.0.3.  
+ClassCastException started occurring after spring cloud stream 2021.0.4.  
 
 ```
-# 1. run kafka
+# 1. run Kafka
 docker-compose up -d
 
 # 2. run application
