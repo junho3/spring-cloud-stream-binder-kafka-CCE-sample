@@ -3,7 +3,7 @@
 This is a sample project for https://github.com/spring-cloud/spring-cloud-stream/issues/2704.  
 
 💡 This issue is fixed after spring-cloud-stream 2023.0.3-SNAPSHOT  
-Commit: https://github.com/spring-cloud/spring-cloud-function/commit/05416dbc30ecab8a2bda237923ef205c9a3bda06
+Fixed commit: https://github.com/spring-cloud/spring-cloud-function/commit/05416dbc30ecab8a2bda237923ef205c9a3bda06
 
 ---
 
