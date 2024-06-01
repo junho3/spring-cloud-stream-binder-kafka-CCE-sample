@@ -1,4 +1,4 @@
-# Spring-cloud-stream-binder-kafka-sample
+# Spring-cloud-stream-binder-kafka-CCE-sample
 
 This is a sample project for https://github.com/spring-cloud/spring-cloud-stream/issues/2704.  
 
