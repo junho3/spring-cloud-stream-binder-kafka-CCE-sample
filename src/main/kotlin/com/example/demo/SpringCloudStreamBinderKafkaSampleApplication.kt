@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class SpringCloudStreamBinderKafkaSampleApplication
+class SpringCloudStreamBinderKafkaCCESampleApplication
 
 fun main(args: Array<String>) {
-    runApplication<SpringCloudStreamBinderKafkaSampleApplication>(*args)
+    runApplication<SpringCloudStreamBinderKafkaCCESampleApplication>(*args)
 }
