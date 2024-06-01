@@ -2,7 +2,7 @@ server:
   port: 8080
 
 spring:
-  application.name: spring-cloud-stream-binder-kafka-sample
+  application.name: spring-cloud-stream-binder-kafka-cce-sample
   cloud:
     function:
       definition: sampleConsumer;sampleFunction;
