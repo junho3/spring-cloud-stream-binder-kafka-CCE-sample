@@ -16,9 +16,12 @@ java {
 
 repositories {
     mavenCentral()
+    maven {
+        url = uri("https://repo.spring.io/snapshot")
+    }
 }
 
-extra["springCloudVersion"] = "2023.0.2"
+extra["springCloudVersion"] = "2023.0.3-SNAPSHOT"
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
